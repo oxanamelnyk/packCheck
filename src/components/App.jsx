@@ -19,6 +19,26 @@ function App() {
     setItems(newItems);
   };
 
+  const handleMarkAllAsComlite = () => {
+    setItems(
+      items.map((item) => {
+        return { ...item, packed: true };
+      })
+    );
+  };
+
+  const handleMarkAllInComlite = () => {
+    setItems(
+      items.map((item) => {
+        return { ...item, packed: false };
+      })
+    );
+  };
+
+  const handleResetToInitial = () => {
+    setItems(initialItems);
+  };
+
   const handleRemoveAllItems = () => {
     setItems([]);
   };
@@ -31,6 +51,9 @@ function App() {
         <ItemList items={items} />
         <Sidebar
           handleAddItem={handleAddItem}
+          handleMarkAllAsComlite={handleMarkAllAsComlite}
+          handleMarkAllInComlite={handleMarkAllInComlite}
+          handleResetToInitial={handleResetToInitial}
           handleRemoveAllItems={handleRemoveAllItems}
         />
       </main>
