@@ -5,6 +5,7 @@ export default function ButtonGroup({
   handleMarkAllInComlite,
   handleResetToInitial,
   handleRemoveAllItems,
+  
 }) {
   const secondaryButtons = [
     {

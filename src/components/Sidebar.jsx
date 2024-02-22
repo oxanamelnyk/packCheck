@@ -7,11 +7,13 @@ export default function Sidebar({
   handleMarkAllInComlite,
   handleResetToInitial,
   handleRemoveAllItems,
+  
 }) {
   return (
     <div className="sidebar">
       <AddItemForm onAddItem={handleAddItem} />
       <ButtonGroup
+      
         handleMarkAllAsComlite={handleMarkAllAsComlite}
         handleMarkAllInComlite={handleMarkAllInComlite}
         handleResetToInitial={handleResetToInitial}
