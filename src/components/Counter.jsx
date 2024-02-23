@@ -1,8 +1,8 @@
 
-export default function Counter() {
+export default function Counter({numberOfItemsPacked, totalNimberOfItems}) {
   return (
     <p>
-      <b>1</b> / 3 items packed
+      <b>{numberOfItemsPacked}</b> / {totalNimberOfItems} items packed
     </p>
   )
 }

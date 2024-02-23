@@ -62,7 +62,10 @@ function App() {
     <>
       <BackgroundHeading />
       <main>
-        <Header />
+        <Header
+          numberOfItemsPacked={items.filter((item) => item.packed).length}
+          totalNimberOfItems={items.length}
+        />
         <ItemList
           items={items}
           handleDeleteItem={handleDeleteItem}
